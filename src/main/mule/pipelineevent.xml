@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:spring="http://www.mulesoft.org/schema/mule/spring" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/spring http://www.mulesoft.org/schema/mule/spring/current/mule-spring.xsd">
+	<spring:config name="Spring_Config" doc:name="Spring Config" doc:id="785a203d-05b0-4451-a013-022a8a35bc83" files="beans.xml" />
+	<notifications doc:name="Notifications" doc:id="d869971a-2e2f-433e-8a76-7973ac3f3002" >
+		<notification event="PIPELINE-MESSAGE" />
+		<notification-listener ref="pipeLineNotification" />
+	</notifications>
+</mule>
